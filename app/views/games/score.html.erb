@@ -1,0 +1,9 @@
+<h1>Result</h1>
+
+<% if @letters_include == false %>
+  <%= "Sorry but #{params[:word].upcase} can't be built out of #{params[:letters].gsub(' ', ', ')}" %>
+<% end %>
+
+<p><%= @score %></p>
+
+<%= link_to "Play again", new_path %>
