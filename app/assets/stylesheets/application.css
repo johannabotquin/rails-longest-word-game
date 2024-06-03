@@ -26,9 +26,46 @@ span {
 }
 
 .form {
-  padding-top: 24px
+  padding: 24px
 }
 
 .letters {
   padding : 15px;
+}
+
+.container {
+  font-family: "Quicksand", sans-serif;
+  padding: 24px;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #75D5CB;
+  border: 1px solid white;
+  color: white;
+  font-size: 18px;
+}
+
+.text {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #75D5CB;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #75D5CB;
+  border: 1px solid white;
+  color: white;
+  font-size: 18px;
+}
+
+.score {
+  margin-bottom: 30px;
 }

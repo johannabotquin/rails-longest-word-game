@@ -1,7 +1,9 @@
-<h1>Result</h1>
+<div class="container">
+  <h1>Result</h1>
 
-<p><%= @result %></p>
+  <p><%= @result %></p>
 
-<p><%= @score %></p>
+  <p class="score"><strong>Your score : </strong><%=@score%></p>
 
-<%= link_to "Play again", new_path %>
+  <%= link_to "Play again", new_path %>
+</div>
