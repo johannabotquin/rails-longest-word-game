@@ -12,7 +12,14 @@ class GamesController < ApplicationController
     @word = JSON.parse(user_serialized)
     @score = 0
     word_found
-    corresponding_letters
+    @result = if corresponding_letters == false
+                "Sorry but #{params[:word].upcase} can't be built out of #{params[:letters].gsub(' ', ', ')}"
+              elsif word_found == false
+                "Sorry but #{params[:word].upcase} does not seem to be a valid English word"
+              else
+                "Congratulations ! #{params[:word].upcase} is a valid English word!"
+              end
+
     @score += params[:word].length if word_found && corresponding_letters
   end
 
